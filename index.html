@@ -6,7 +6,7 @@
     <title>MacPilot | Детский инженерный центр премиум-класса</title>
     <meta name="description" content="MacPilot - премиальный детский инженерный центр в Казани. Углубленное изучение Arduino, создание беспилотников, инженерное проектирование и физика для детей. Развиваем будущих инженеров и изобретателей.">
     <style>
-        /* БАЗОВЫЕ СТИЛИ */
+        /* Базовые стили */
         :root {
             --primary: #d32f2f;
             --primary-light: #ff6659;
@@ -132,7 +132,7 @@
             transform: translateX(-50%);
         }
         
-        /* ШАПКА */
+        /* Шапка */
         header {
             background-color: var(--white);
             box-shadow: var(--shadow);
@@ -221,7 +221,7 @@
             color: var(--primary);
         }
         
-        /* ГЕРОЙ СЕКЦИЯ */
+        /* Герой секция */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: white;
@@ -246,7 +246,7 @@
         .hero-content {
             position: relative;
             z-index: 1;
-            max-width: 600px;
+            max-width: 600px; /* Уменьшил ширину контента */
         }
         
         .hero h1 {
@@ -269,13 +269,14 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            width: 45%;
+            width: 45%; /* Уменьшил ширину изображения */
             height: 100%;
             background: url('https://sun9-76.userapi.com/s/v1/ig2/y9Gbv5r1Jv3IsNeu95k6pv4cuEC6pZOBu4xkEGTh-Q-ioapPYeUzhFG6y1g8Fx2REk9N4H-GbQxmiNdcydKHb9xy.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0') no-repeat center right;
             background-size: cover;
             border-radius: 20px 0 0 0;
         }
         
+        /* Стили для структурированного текста */
         .tech-features {
             margin: 30px 0;
         }
@@ -308,6 +309,7 @@
             font-size: 1rem;
         }
         
+        /* Стиль для иконки беспилотника */
         .drone-icon {
             display: inline-block;
             width: 24px;
@@ -358,7 +360,7 @@
             }
         }
         
-        /* О НАС */
+        /* О нас */
         .about {
             background-color: var(--white);
         }
@@ -386,7 +388,7 @@
             display: block;
         }
         
-        /* ПРОГРАММЫ */
+        /* Направления */
         .programs {
             background-color: var(--background);
         }
@@ -420,6 +422,7 @@
             background-color: rgba(76, 175, 80, 0.1);
         }
         
+        /* Специальные стили для иконки дрона */
         .drone-program-icon {
             position: relative;
             width: 60px;
@@ -509,7 +512,7 @@
             margin-right: 10px;
         }
         
-        /* ПРЕИМУЩЕСТВА */
+        /* Преимущества */
         .features {
             background-color: var(--white);
         }
@@ -548,7 +551,7 @@
             margin-bottom: 15px;
         }
         
-        /* ФОРМА */
+        /* Форма */
         .cta {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: white;
@@ -609,7 +612,7 @@
             line-height: 1.4;
         }
         
-        /* ФУТЕР */
+        /* Футер */
         footer {
             background-color: var(--primary-dark);
             color: white;
@@ -703,7 +706,7 @@
             font-size: 0.9rem;
         }
         
-        /* АДАПТИВНОСТЬ */
+        /* Адаптивность */
         @media (max-width: 992px) {
             h1 {
                 font-size: 2.8rem;
@@ -795,7 +798,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- ШАПКА -->
+    <!-- Шапка -->
     <header>
         <div class="container header-container">
             <a href="#" class="logo">
@@ -825,7 +828,7 @@
         </div>
     </header>
 
-    <!-- ГЕРОЙ СЕКЦИЯ -->
+    <!-- Герой секция -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -867,7 +870,7 @@
         </div>
     </section>
 
-    <!-- О НАС -->
+    <!-- О нас -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-header">
@@ -887,7 +890,7 @@
         </div>
     </section>
 
-    <!-- ПРОГРАММЫ -->
+    <!-- Программы -->
     <section class="programs" id="programs">
         <div class="container">
             <div class="section-header text-center">
@@ -967,7 +970,7 @@
         </div>
     </section>
 
-    <!-- ПРЕИМУЩЕСТВА -->
+    <!-- Преимущества -->
     <section class="features" id="features">
         <div class="container">
             <div class="section-header text-center">
@@ -1026,7 +1029,7 @@
         </div>
     </section>
 
-    <!-- ПРИЗЫВ К ДЕЙСТВИЮ -->
+    <!-- Призыв к действию -->
     <section class="cta" id="cta">
         <div class="container">
             <h2>Запишитесь на бесплатное пробное занятие</h2>
@@ -1059,4 +1062,103 @@
                     <select id="program" required>
                         <option value="" disabled selected>Выберите программу</option>
                         <option value="arduino">Arduino-программирование</option>
-                        <option value="drones">Юный ин
+                        <option value="drones">Юный инженер: Беспилотники</option>
+                        <option value="physics">Понятная физика</option>
+                        <option value="consult">Не знаю, нужна консультация</option>
+                    </select>
+                </div>
+                
+                <div class="form-checkbox">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Я согласен на обработку персональных данных и ознакомлен с политикой конфиденциальности</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="background-color: white; color: var(--primary);">Записаться на пробное занятие</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MacPilot</h3>
+                    <p>Премиальный детский инженерный центр в Казани. Развиваем технические таланты через практические проекты.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Программы</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Arduino-программирование</a></li>
+                        <li><a href="#">Юный инженер: Беспилотники</a></li>
+                        <li><a href="#">Понятная физика</a></li>
+                        
+                        <li><a href="#">Летние интенсивы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Казань, ул. Кремлевская, 35</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (993) 402-41-38</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>macpilot@mail.ru</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Сб: 10:00-20:00<br>Вс: 10:00-20:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 MacPilot. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+        
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Закрываем мобильное меню после клика
+                    document.getElementById('mainNav').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
